@@ -123,4 +123,16 @@ console.log(Number('Jonas')); // NaN
 console.log(String(23), 23);
 
 // type coercion
-console.log("I'm " + 24 + ' years old.') // 24 gets converted to string automatically.
+console.log("I'm " + 24 + ' years old.'); // 24 gets converted to string automatically.
+console.log('23' - '10' - 3); //Here strings are converted to numbers. (for '-' operator).
+console.log('23' * '2');
+
+let n = '1' + 1; // '11'
+n = n - 1; // 10
+console.log(n);
+
+let num = 2 + 3 + 4 + '5' // "95" : (2+3+4) + "5"
+console.log(num);
+
+let var1 = '10' - '4' - '3' - 2 + '5' // "15" (10 - 4 - 3 - 2) + "5"
+console.log(var1);
