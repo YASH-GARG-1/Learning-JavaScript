@@ -59,15 +59,51 @@
 // a = b = 25 - 15 - 5;
 // console.log(a, b);
 
-// Strings
 
-const firstName = 'Yash';
-const job = 'Software Developer';
-const birthYear = 2001;
-const currentYear = 2025;
-const yash = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + '!';
-console.log(yash);
 
-//Template Strings
-const yashNew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}!`;
-console.log(yashNew);
+// DAY-2: Strings
+
+
+// const firstName = 'Yash';
+// const job = 'Software Developer';
+// const birthYear = 2001;
+// const currentYear = 2025;
+// const yash = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + '!';
+// console.log(yash);
+
+// //Template Strings
+// const yashNew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}!`;
+// console.log(yashNew);
+
+// console.log('String with \n\
+// multiple \n\
+// lines')
+
+// console.log(`Strings
+// with multiple
+// lines`);
+
+
+
+// Day-2: If-Else in JS
+
+
+
+// const age = 5;
+// const isOldEnough = age >= 18;
+
+// if(isOldEnough){
+//   console.log('You are Eligible for giving the Driving License Exam 🚗'); // For Emoji : window + .
+// } else {
+//   console.log(`Sorry! You are not eligible for taking the Driving License Test. Wait another ${18 - age} Years!!`)
+// }
+
+// const birthYear = 2001;
+// let century;
+// if(birthYear < 2001)
+// {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
