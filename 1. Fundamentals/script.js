@@ -107,3 +107,20 @@
 //   century = 21;
 // }
 // console.log(century);
+
+
+
+// Day-2: Type Conversion and Coercion
+
+// Type Conversion: When we explicitely perform the conversion
+// Coercion: When Js performs the conversion for us. 
+const currentYear = '2025';
+console.log(Number(currentYear), currentYear);
+console.log(currentYear + 18); // string contatination
+console.log(Number(currentYear) + 18); // Sum
+
+console.log(Number('Jonas')); // NaN
+console.log(String(23), 23);
+
+// type coercion
+console.log("I'm " + 24 + ' years old.') // 24 gets converted to string automatically.
