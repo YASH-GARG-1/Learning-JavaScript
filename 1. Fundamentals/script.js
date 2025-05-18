@@ -243,3 +243,14 @@
 //   const str = '23 is bigger!!';
 // }
 
+
+// // Day-3: The Conditional (Ternary) Operator:
+
+
+// const myAge = 2;
+// myAge >= 18? console.log('Eligible to vote!!') : console.log('Maybe try after your age is atleast 18 🥹');
+
+// const drink = myAge >= 18 ? 'Wine 🍷' : 'Water 💧';
+// console.log(drink);
+
+// console.log(`I would like to drink ${myAge >= 18 ? 'Wine 🍷' : 'Water 💧'}`);
