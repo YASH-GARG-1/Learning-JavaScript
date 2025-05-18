@@ -229,4 +229,17 @@
 // }
 
 
-// Day-3: Sattements and Expressions
+// Day-3: Statements and Expressions
+
+// Expressions : Produces an value in JS
+// 3+4 
+// 1991
+// false && true && !false
+
+// //Statements : does not produce an value itself.
+
+// if(23 > 10) // Here if is a statement
+// {
+//   const str = '23 is bigger!!';
+// }
+
