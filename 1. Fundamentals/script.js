@@ -200,3 +200,33 @@
 
 
 // Day-3: Switch Statement
+
+
+// const day = 'sunday';
+
+// switch(day)
+// {
+//   case 'monday':
+//     console.log('Plan Course Structure');
+//     console.log('Learn System design');
+//     break;
+//   case 'tuesday':
+//     console.log('Learn LLD');
+//     break;
+//   case 'wednesday':
+//   case 'thursday':
+//     console.log('Practise DSA');
+//     break;
+//   case 'friday':
+//     console.log('Learn Web Development');
+//     break;
+//   case 'saturday':
+//   case 'sunday':
+//     console.log('Learn Web Development');
+//     break;
+//   default:
+//     console.log('Not a valid Day');
+// }
+
+
+// Day-3: Sattements and Expressions
