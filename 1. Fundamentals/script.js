@@ -114,25 +114,60 @@
 
 // Type Conversion: When we explicitely perform the conversion
 // Coercion: When Js performs the conversion for us. 
-const currentYear = '2025';
-console.log(Number(currentYear), currentYear);
-console.log(currentYear + 18); // string contatination
-console.log(Number(currentYear) + 18); // Sum
+// const currentYear = '2025';
+// console.log(Number(currentYear), currentYear);
+// console.log(currentYear + 18); // string contatination
+// console.log(Number(currentYear) + 18); // Sum
 
-console.log(Number('Jonas')); // NaN
-console.log(String(23), 23);
+// console.log(Number('Jonas')); // NaN
+// console.log(String(23), 23);
 
-// type coercion
-console.log("I'm " + 24 + ' years old.'); // 24 gets converted to string automatically.
-console.log('23' - '10' - 3); //Here strings are converted to numbers. (for '-' operator).
-console.log('23' * '2');
+// // type coercion
+// console.log("I'm " + 24 + ' years old.'); // 24 gets converted to string automatically.
+// console.log('23' - '10' - 3); //Here strings are converted to numbers. (for '-' operator).
+// console.log('23' * '2');
 
-let n = '1' + 1; // '11'
-n = n - 1; // 10
-console.log(n);
+// let n = '1' + 1; // '11'
+// n = n - 1; // 10
+// console.log(n);
 
-let num = 2 + 3 + 4 + '5' // "95" : (2+3+4) + "5"
-console.log(num);
+// let num = 2 + 3 + 4 + '5' // "95" : (2+3+4) + "5"
+// console.log(num);
 
-let var1 = '10' - '4' - '3' - 2 + '5' // "15" (10 - 4 - 3 - 2) + "5"
-console.log(var1);
+// let var1 = '10' - '4' - '3' - 2 + '5' // "15" (10 - 4 - 3 - 2) + "5"
+// console.log(var1);
+
+
+// Day-2: Truthy and falsy Values.
+
+// console.log(Boolean(0)); // false
+// console.log(Boolean(undefined)); // false
+// console.log(Boolean('Jonas')); // True: not an empty string
+// console.log(Boolean({})); // true: empty object 
+// console.log(Boolean('')); //false : Empty String.
+
+
+//Day-2: Equality operators: == and ===
+
+
+const age = 18;
+if(age === 18)
+{
+  console.log('You just became an adult 🎉');
+}
+
+console.log(18 === 19); 
+console.log(18 === '18'); // === strictly compares. Hence false
+console.log(18 == '18'); // == Performs type coercion. (Loosely compares) hence true.
+
+const favouriteNumber = Number(prompt("What's is your favourite Number?"));
+console.log(favouriteNumber);
+console.log(typeof favouriteNumber);
+
+if(favouriteNumber === 24)
+{
+  console.log('Cool!! 24 is an amazing Number');
+}
+
+if(favouriteNumber !== 23)
+  console.log('Why not 23??');
