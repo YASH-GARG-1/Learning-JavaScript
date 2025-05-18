@@ -150,24 +150,53 @@
 //Day-2: Equality operators: == and ===
 
 
-const age = 18;
-if(age === 18)
-{
-  console.log('You just became an adult 🎉');
-}
+// const age = 18;
+// if(age === 18)
+// {
+//   console.log('You just became an adult 🎉');
+// }
 
-console.log(18 === 19); 
-console.log(18 === '18'); // === strictly compares. Hence false
-console.log(18 == '18'); // == Performs type coercion. (Loosely compares) hence true.
+// console.log(18 === 19); 
+// console.log(18 === '18'); // === strictly compares. Hence false
+// console.log(18 == '18'); // == Performs type coercion. (Loosely compares) hence true.
 
-const favouriteNumber = Number(prompt("What's is your favourite Number?"));
-console.log(favouriteNumber);
-console.log(typeof favouriteNumber);
+// const favouriteNumber = Number(prompt("What's is your favourite Number?"));
+// console.log(favouriteNumber);
+// console.log(typeof favouriteNumber);
 
-if(favouriteNumber === 24)
-{
-  console.log('Cool!! 24 is an amazing Number');
-}
+// if(favouriteNumber === 24)
+// {
+//   console.log('Cool!! 24 is an amazing Number');
+// }
 
-if(favouriteNumber !== 23)
-  console.log('Why not 23??');
+// if(favouriteNumber !== 23)
+//   console.log('Why not 23??');
+
+
+// Day-3: Boolean Logic
+
+
+// And : A && B
+// Or : A || B
+// Not : !A (Has precedence over And , Or)
+
+// const hasDriverLicense = true;
+// const hasGoodVision = true;
+
+// if(hasDriverLicense && hasGoodVision)
+// {
+//   console.log("Congratulations!! You are a driver 🚗");
+// }
+// else
+// {
+//   console.log('Someone else should Drive!! 😢');
+// }
+
+// const isTired = true;
+// if(!hasDriverLicense || !hasGoodVision || isTired)
+// {
+//   console.log('Sarah should be banished from driving for a temporary basis. 😊');
+// }
+
+
+// Day-3: Switch Statement
