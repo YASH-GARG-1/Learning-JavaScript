@@ -16,36 +16,43 @@ function getRandomNumber() {
 
 let guessesLeft = 20;
 
-// console.log(numberToGuess); // comment later
+function displayMessage(message) {
+  document.querySelector('.message').textContent = message;
+}
 
 document.querySelector('.again').addEventListener('click', function () {
   guessesLeft = 20;
   numberToGuess = getRandomNumber();
-  document.querySelector('.message').textContent = 'Start guessing...';
-  document.querySelector('.score').textContent = 20;
+  displayMessage('Start guessing...');
+  document.querySelector('.score').textContent = guessesLeft;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
   // console.log(numberToGuess);
 });
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-  if (!guess) {
-    document.querySelector('.message').textContent = '⛔ No Number Entered!!';
+  if (guessesLeft < 1) {
+    displayMessage('😟 You lost the Game!!!');
+  } else if (!guess) {
+    displayMessage('⛔ No Number Entered!!');
   } else if (guess > 20 || guess < 1) {
-    document.querySelector('.message').textContent =
-      '⛔ Enter a Number in the range 1 to 20!!';
+    displayMessage('⛔ Enter a Number in the range 1 to 20!!');
   } else if (guess === numberToGuess) {
-    document.querySelector('.message').textContent = 'Correct Number!';
+    displayMessage('Correct Number!');
     document.querySelector('.number').textContent = numberToGuess;
+    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('body').style.backgroundColor = '#60b347';
     if (guessesLeft > highestScore) {
       highestScore = guessesLeft;
     }
   } else if (guess < numberToGuess) {
-    document.querySelector('.message').textContent = '📉 Too Low!!';
+    displayMessage('📉 Too Low!!');
     guessesLeft--;
   } else {
-    document.querySelector('.message').textContent = '📈 Too High!!';
+    displayMessage('📈 Too High!!');
     guessesLeft--;
   }
   document.querySelector('.highscore').textContent = highestScore;
